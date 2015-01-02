@@ -136,6 +136,10 @@ hr {
 
 
 
+<!-- MathJax scripts -->
+<script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
 
 
 </head>
@@ -145,10 +149,67 @@ hr {
 
 <h1>1. Optimal Scaling:</h1>
 
+<hr/>
+
+<h3>* Assign scales to the levels of categorical variables</h3>
+
+<h3>* The projections of the vertices onto the 1st principal axis provide the optimal scaling</h3>
+
+<h3>* The scale of the levels of the 1st variable is optimal in terms of distinguishing between the behavior of the levels of the 2nd variable in association to the 1st</h3>
+
+<h3>* The projections of the profile points onto the 1st principal axis provide the score of the profile</h3>
+
+<h3>* Assumptions: avg of optimal scaling = 0 ; variance = 1</h3>
+
+<h3>* Transformation of Optimal scaling: to fix 2 end-points (0=disagree, 100=strongly agree)</h3>
+
+<h1>2. Row and Column Analyses</h1>
+
+<hr/>
+
+<h3>* Similarities:</h3>
+
 <ul>
-<li>* Assign scales to the levels of categorical variables *</li>
-<li>* The projections of the vertices onto the 1st principal axis provide the optimal scaling *</li>
+<li>The percentage of inertia accounted by the first principle axis is the same for both </li>
+<li>The dimension of the subsapce where the row point clouds and the column point clouds exist are the same</li>
+<li>The dimension of the projection subspaces of row profiles and column profiles are the same</li>
+<li>On the projection subspace - first principle axis, <strong>Transform coordinates from:</strong></li>
 </ul>
+
+<table><thead>
+<tr>
+<th>Projection of Column Profiles</th>
+<th>Projection of Column Vertices</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>\( \tilde{\omega} \)</strong></td>
+<td><strong>\( \sqrt{\frac{1}{p}}\tilde{\omega} \)</strong></td>
+</tr>
+</tbody></table>
+
+<table><thead>
+<tr>
+<th>Projection of Row Profiles</th>
+<th>Projection of Row Vertices</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>\( \tilde{v} \)</strong></td>
+<td><strong>\( \sqrt{p}\tilde{v} \)</strong></td>
+</tr>
+</tbody></table>
+
+<p><strong>\( p \) = percentage of inertia the first priciple axis accounts for</strong> \( \leftarrow \) the \( scaling factor^2 \) on the first pinciple axis</p>
+
+<h3>* Linear Algebra Background:</h3>
+
+<ul>
+<li>Row Space and Column Space of Matrix</li>
+<li>Change of Basis</li>
+</ul>
+
+<p>? Total inertia: = the amount of dispersion in a set of profiles relative to the outer vertices</p>
 
 </body>
 
